@@ -1,0 +1,31 @@
+name: "📚 User Story"
+description: Create a new ticket that details how an end user is expected to interact with the feature
+title: "📚 [STORY] - <title>"
+labels: [
+  "story"
+]
+body:
+  - type: textarea
+    id: reference_issues
+    attributes:
+      label: "Reference Issues"
+      description: Common issues
+      placeholder: "#Issues IDs"
+    validations:
+      required: false
+  - type: textarea
+    id: persona
+    attributes:
+      label: "Persona"
+      description: "Provide a brief persona for the user in this story"
+      placeholder: "Describe in a few lines the end user"
+    validations:
+      required: false
+  - type: textarea
+    id: story
+    attributes:
+      label: "Story"
+      description: Provide the story
+      placeholder: "Provide the user story: 'As a [persona], I [want to], [so that],'"
+    validations:
+      required: true
